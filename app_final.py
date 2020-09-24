@@ -146,12 +146,9 @@ class Predictor:
                 self.predictions_train = self.alg.predict(self.X_train)
                 self.predictions = predictions
                 cm_log=confusion_matrix(self.y_test,self.predictions)
-                cm_head = sns.heatmap(cm_log, annot=True,fmt='3.0f',cmap="cubehelix")
-                #st.write('Confusion matrix: ', cm_head)
-                #st.title("Matrix Confusion")
                 st.subheader('Matrix of Confusion')
-                #fig = plt.subplots(figsize=(7, 3))
-                st.pyplot()
+                st.write(cm_log)
+                
     
         
             elif self.chosen_classifier=='Naive Bayes':
@@ -160,10 +157,10 @@ class Predictor:
                 predictions = self.alg.predict(self.X_test)
                 self.predictions_train = self.alg.predict(self.X_train)
                 self.predictions = predictions
-                cm_naive =confusion_matrix(self.y_test,self.predictions)
-                cm_headmap = sns.heatmap(cm_naive, annot=True,fmt='3.0f', cmap="summer")
-                st.subheader('Matrix of Confusion')#cmap="YlGnBu"
-                st.pyplot()
+                cm_naive=confusion_matrix(self.y_test,self.predictions)
+                st.subheader('Matrix of Confusion')
+                st.write(cm_naive)
+                
                 
             
             
@@ -173,10 +170,10 @@ class Predictor:
                 predictions = self.alg.predict(self.X_test)
                 self.predictions_train = self.alg.predict(self.X_train)
                 self.predictions = predictions
-                cm_mpl =confusion_matrix(self.y_test,self.predictions)
-                cm_headmap = sns.heatmap(cm_mpl, annot=True,fmt='3.0f', cmap="summer")
+                cm_mpl=confusion_matrix(self.y_test,self.predictions)
                 st.subheader('Matrix of Confusion')
-                st.pyplot()
+                st.write(cm_mpl)
+                
                 
                 
             elif self.chosen_classifier == "Xgboost Classifier":
@@ -185,10 +182,10 @@ class Predictor:
                 predictions = self.alg.predict(self.X_test)
                 self.predictions_train = self.alg.predict(self.X_train)
                 self.predictions = predictions
-                cm_xg = confusion_matrix(self.y_test,self.predictions)
-                cm_headmap = sns.heatmap(cm_xg, annot=True,fmt='3.0f', cmap="YlGnBu")
+                cm_xgb=confusion_matrix(self.y_test,self.predictions)
                 st.subheader('Matrix of Confusion')
-                st.pyplot()
+                st.write(cm_xgb)
+                
 
            
 
