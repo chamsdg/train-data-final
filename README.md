@@ -1,11 +1,8 @@
-﻿=============================Contexte============================================
-Cette application fortement inspiré d'un tutoriel constitue mon projet de fin d'étude.
-En effet, dans le cadre de la validation de mon projet de fin d"étude de MBA Big Data ,il nous ait demander d'avoir chacun un projet digital.
-C'est là que l'idée de ce projet m'est venue.
-La soutenance se fera au mois de decembre  2020.
+This application strongly inspired by a tutorial is my graduation project.
+Indeed, as part of the validation of my MBA Big Data end-of-study project, he asked us to each have a digital project.
+This is where the idea for this project came to me.
+The defense will take place in December 2020.
 
-=========================Besoin========================================
-Cette application d'analyse predictive permettra aux data scientists d'aller plus vite et de se concentrer sur des taches les plus importantes.
-De l'autre coté, cette application souhaite démocratiser la data science afin qu'elle soit accessible à tous.
-
+This predictive analysis application will allow data scientists to go faster and focus on the most important tasks.
+On the other hand, this application wants to democratize data science so that it is accessible to everyone.
 
